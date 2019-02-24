@@ -6,6 +6,9 @@ public class leftHandTrigger : MonoBehaviour
 {
     void OnTriggerEnter(Collider myTrigger)
     {
-        Debug.Log("Box went through!");
+        if (myTrigger.gameObject.tag.Equals("shibe"))
+        {
+            Debug.Log("patting the dog with left hand, reacting on tag!");
+        }
     }
 }

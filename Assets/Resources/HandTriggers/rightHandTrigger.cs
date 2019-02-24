@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class rightHandTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnTriggerEnter(Collider myTrigger)
+    { 
+        if (myTrigger.gameObject.tag.Equals("shibe"))
+        {
+            Debug.Log("patting the dog with right hand, reacting on tag!");
+        }
     }
 }
