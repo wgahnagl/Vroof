@@ -3,18 +3,21 @@ using System.Collections;
 
 public class PlayerInput : MonoBehaviour
 {
-    public Animation animation;
+    //public Animation animation;
 
     // Use this for initialization
+    OVRManager ovrManager;
     void Start()
     {
-        animation = gameObject.GetComponent<Animation>();
+        //animation = gameObject.GetComponent<Animation>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        OVRInput.Update();
         // Press A
+
         if (OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
             //while () {
