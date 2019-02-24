@@ -10,6 +10,8 @@ public class leftHandTrigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider myTrigger)
     {
+        Debug.Log("collidedLeft, trigger");
+
         if (myTrigger.gameObject.name.Equals("sheeb"))
         {
             Debug.Log("patting the dog with left hand, reacting on name!");
