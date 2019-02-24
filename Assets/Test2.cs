@@ -14,8 +14,8 @@ public class Test2 : MonoBehaviour
     void Update()
     {
         
-        if (public virtual bool IsTouched()){
-    ParticleSystem.EmissionModule.rate = 5.0f
-    } 
+//        if (public virtual bool IsTouched()){
+//    ParticleSystem.EmissionModule.rate = 5.0f
+//    } 
     }
 }
