@@ -41,13 +41,12 @@ public class DogScripts : MonoBehaviour
 
         }
         }
-
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0)
             {
             timeLeft = 60;
             animator.SetTrigger("Yawn");
-
+            animator.ResetTrigger("Yawn");
         }
 
 
