@@ -22,7 +22,7 @@ public class PlayerInputController : MonoBehaviour
 
 
         OVRInput.Get(OVRInput.Button.One);
-        if (OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
+        if (OVRInput.Get(OVRInput.RawButton.A, OVRInput.Controller.RTouch))
         {
             //while () {
             //    animation.Play("feeding");
@@ -32,7 +32,7 @@ public class PlayerInputController : MonoBehaviour
             //}
             Debug.Log("A was pressed");
         }
-        else if (OVRInput.Get(OVRInput.Button.Three, OVRInput.Controller.LTouch))
+        else if (OVRInput.Get(OVRInput.RawButton.X, OVRInput.Controller.LTouch))
         {
             // Press X
             //while ()
@@ -44,7 +44,7 @@ public class PlayerInputController : MonoBehaviour
             //}
             Debug.Log("X was Pressed");
         }
-        else if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
+        else if (OVRInput.Get(OVRInput.RawButton.LIndexTrigger, OVRInput.Controller.LTouch))
         {
             //// Left Trigger is Held down
             //while(OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch)){
@@ -55,7 +55,7 @@ public class PlayerInputController : MonoBehaviour
             //}
             Debug.Log("LEFT");
         }
-        else if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+        else if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, OVRInput.Controller.RTouch))
         {
             //    // Right Trigger is held down
             //    while(  ) {
