@@ -14,13 +14,14 @@ public class DogFollowBall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        time = 2;
+        time = 10;
     }
 
     void OnCollisionExit(Collision collision) {
         if (collision.gameObject.name.Equals("floor")) {
             GameObject.Find("sheeb").GetComponent<NavMeshAgent>().SetDestination(minorFocus.position);
         }
+        Debug.Log("exit");
     }
 
 
@@ -30,8 +31,9 @@ public class DogFollowBall : MonoBehaviour
         time -= Time.deltaTime;
         if (time < 0)
         {
-            time = 60;
+            time = 15;
             GameObject.Find("sheeb").GetComponent<NavMeshAgent>().SetDestination(mainFocus.position);
+            Debug.Log("time's up");
         }
     }
 }
