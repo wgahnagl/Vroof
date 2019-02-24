@@ -21,7 +21,6 @@ public class DogFollowBall : MonoBehaviour
         if (collision.gameObject.name.Equals("floor")) {
             GameObject.Find("sheeb").GetComponent<NavMeshAgent>().SetDestination(minorFocus.position);
         }
-        Debug.Log("exit");
     }
 
 
@@ -33,7 +32,6 @@ public class DogFollowBall : MonoBehaviour
         {
             time = 15;
             GameObject.Find("sheeb").GetComponent<NavMeshAgent>().SetDestination(mainFocus.position);
-            Debug.Log("time's up");
         }
     }
 }

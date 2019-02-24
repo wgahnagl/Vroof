@@ -10,6 +10,7 @@ public class DogScripts : MonoBehaviour
     NavMeshAgent agent;
     System.Random rndom;
     float timeLeft;
+    float moreTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class DogScripts : MonoBehaviour
         animator.SetBool("walk", true);
          rndom = new System.Random();
         timeLeft = 60;
+        moreTime = 1;
     }
 
     // Update is called once per frame
@@ -42,14 +44,12 @@ public class DogScripts : MonoBehaviour
         }
         }
             timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
-            {
+        if (timeLeft < 0)
+        {
             timeLeft = 60;
             animator.SetTrigger("Yawn");
             animator.ResetTrigger("Yawn");
         }
-
-
     }
 
     void OnCollisionEnter(Collision col) {
@@ -57,6 +57,7 @@ public class DogScripts : MonoBehaviour
         {
             animator.SetBool("Wiggle", true);
             GameObject.Find("VfxBrightStars").GetComponent<ParticleSystem>().Play();
+            Debug.Log("we're in");
         }
     }
 
@@ -65,7 +66,15 @@ public class DogScripts : MonoBehaviour
         if (col.gameObject.CompareTag("PlayerHand"))
         {
             animator.SetBool("Wiggle", false);
-            GameObject.Find("VfxBrightStars").GetComponent<ParticleSystem>().Pause();
+
+            moreTime -= Time.deltaTime;
+            if (moreTime < 0)
+            {
+                moreTime = 1;
+                GameObject.Find("VfxBrightStars").GetComponent<ParticleSystem>().Pause();
+                Debug.Log("we're out");
+
+            }
 
         }
     }

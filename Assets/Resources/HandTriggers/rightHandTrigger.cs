@@ -16,7 +16,7 @@ public class rightHandTrigger : MonoBehaviour
     {
         if (myTrigger.gameObject.tag.Equals("shibe"))
         {
-            GameObject.Find("sheeb").GetComponent<Animator>().SetBool("Wiggle", false);
+           // GameObject.Find("sheeb").GetComponent<Animator>().SetBool("Wiggle", false);
         }
     }
 }
