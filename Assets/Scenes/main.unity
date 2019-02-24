@@ -605,8 +605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1d79109100cf6f448f73754efe0154c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1202792693
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1163,7 +1161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.545
+      value: -3.51
       objectReference: {fileID: 0}
     - target: {fileID: 400084, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
       propertyPath: m_LocalRotation.x
