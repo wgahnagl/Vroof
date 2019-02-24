@@ -250,6 +250,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &648712187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1366563939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &648712190
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648712187}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7acb193e36047847894a54f2c94ba5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &789579632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1232,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 134650, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_TagString
+      value: PlayerHand
+      objectReference: {fileID: 0}
     - target: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1214,6 +1243,10 @@ PrefabInstance:
     - target: {fileID: 481164, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168962, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: m_TagString
+      value: PlayerHand
       objectReference: {fileID: 0}
     - target: {fileID: 477154, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_RootOrder
@@ -1582,7 +1615,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9500000, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ccf7478c9d8d3b8439b4f3f28150dcdc, type: 2}
+    - target: {fileID: 9500000, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
 --- !u!1 &1366563940 stripped
 GameObject:
@@ -1645,6 +1691,25 @@ CapsuleCollider:
   m_Height: 0.0030000012
   m_Direction: 2
   m_Center: {x: -0, y: 0.0003, z: -0}
+--- !u!95 &1366563945
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366563940}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62a82ee4ae0b92947b2d96ff0508529b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1366563948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1654,10 +1719,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1366563940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5a872908587274cb4f0a81cca89d14, type: 3}
+  m_Script: {fileID: 11500000, guid: 21e9e193a285ea9428202c275e7a4307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: {fileID: 0}
 --- !u!1 &1374230838 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100024, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3,
@@ -1815,7 +1879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59d76404251dcda46afd7b5c2ee2943d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleType: {fileID: 0}
 --- !u!1 &1690821522 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100078, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3,
