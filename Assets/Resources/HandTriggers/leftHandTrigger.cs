@@ -10,7 +10,13 @@ public class leftHandTrigger : MonoBehaviour
     }
     void OnTriggerEnter(Collider myTrigger)
     {
-        Debug.Log("collidedLeft, trigger");
+
+        if (! myTrigger.gameObject.name.Equals("OVR PlayerController")) {
+            Debug.Log("collidedLeft, trigger");
+            Debug.Log(myTrigger.gameObject.name);
+
+        }
+
 
         if (myTrigger.gameObject.name.Equals("sheeb"))
         {
