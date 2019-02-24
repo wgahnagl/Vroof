@@ -16,7 +16,6 @@ public class FoodWater : MonoBehaviour
     {
         if (this.gameObject.transform.up.y < 0)
         {
-            Debug.Log("aaaaaaaaaa");
             //you're upside down
         }
         //particleType.Pause();

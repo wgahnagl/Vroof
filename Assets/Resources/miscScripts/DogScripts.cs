@@ -52,7 +52,7 @@ public class DogScripts : MonoBehaviour
         {
             animator.SetBool("Wiggle", true);
             Debug.Log(animator.GetBool("Wiggle"));
-           
+            GameObject.Find("VfxBrightStars").GetComponent<ParticleSystem>().Play();
         }
     }
 
@@ -61,6 +61,8 @@ public class DogScripts : MonoBehaviour
         if (col.gameObject.CompareTag("PlayerHand"))
         {
             animator.SetBool("Wiggle", false);
+            GameObject.Find("VfxBrightStars").GetComponent<ParticleSystem>().Pause();
+
         }
     }
 
