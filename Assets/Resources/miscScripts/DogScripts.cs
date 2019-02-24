@@ -43,6 +43,8 @@ public class DogScripts : MonoBehaviour
         if (col.gameObject.CompareTag("PlayerHand"))
         {
             animator.SetBool("Wiggle", true);
+            Debug.Log(animator.GetBool("Wiggle"));
+           
         }
     }
 
