@@ -9,6 +9,7 @@ public class DogScripts : MonoBehaviour
     Animator animator;
     NavMeshAgent agent;
     System.Random rndom;
+    float timeLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class DogScripts : MonoBehaviour
 
         animator.SetBool("walk", true);
          rndom = new System.Random();
+        timeLeft = 60;
     }
 
     // Update is called once per frame
@@ -40,13 +42,16 @@ public class DogScripts : MonoBehaviour
         }
         }
 
-        int rand = rndom.Next(0, 1000);
-        if (rand == 1) { 
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+            timeLeft = 60;
             animator.SetTrigger("Yawn");
-            Debug.Log("what");
-        }
-    }
 
+        }
+
+
+    }
 
     void OnCollisionEnter(Collision col) {
         if (col.gameObject.CompareTag("PlayerHand"))
