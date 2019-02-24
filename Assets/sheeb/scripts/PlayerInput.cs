@@ -6,7 +6,7 @@ public class PlayerInput : MonoBehaviour
     //public Animation animation;
 
     // Use this for initialization
-    OVRManager ovrManager;
+    readonly OVRManager ovrManager;
     void Start()
     {
         //animation = gameObject.GetComponent<Animation>();
@@ -17,7 +17,6 @@ public class PlayerInput : MonoBehaviour
     {
         OVRInput.Update();
         // Press A
-
         if (OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
             //while () {
