@@ -6,15 +6,15 @@ public class leftHandTrigger : MonoBehaviour
 {
     private void Start()
     {
-        Debug.Log("hey what");
+        Debug.Log("left locked and loaded");
     }
     void OnTriggerEnter(Collider myTrigger)
     {
-        Debug.Log("Box went through!");
+        Debug.Log("collidedLeft, trigger");
     }
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log("aaa");
+        Debug.Log("collidedLeft, collision");
     }
 }
