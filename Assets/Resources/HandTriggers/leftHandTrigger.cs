@@ -8,7 +8,6 @@ public class leftHandTrigger : MonoBehaviour
     {
         if (myTrigger.gameObject.tag.Equals("shibe"))
         {
-            Debug.Log("patting the dog with left hand, reacting on tag!");
             GameObject.Find("sheeb").GetComponent<Animator>().SetBool("Wiggle", true);
         }
     }
@@ -16,7 +15,6 @@ public class leftHandTrigger : MonoBehaviour
     {
         if (myTrigger.gameObject.tag.Equals("shibe"))
         {
-            Debug.Log("patting the dog with left hand, reacting on tag!");
             GameObject.Find("sheeb").GetComponent<Animator>().SetBool("Wiggle", false);
         }
     }
