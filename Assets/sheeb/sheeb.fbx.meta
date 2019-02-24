@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 4f0f2695d7ab9d84a9414cfb8facb9e3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _arm
+    100002: _mesh
+    100004: head ear left
+    100006: head ear left_end
+    100008: head ear right
+    100010: head ear right_end
+    100012: head eyeball left
+    100014: head eyeball left_end
+    100016: head eyeball right
+    100018: head eyeball right_end
+    100020: head jaw
+    100022: head neck lower
+    100024: head neck upper
+    100026: head tongue 1
+    100028: head tongue 2
+    100030: head tongue 3
+    100032: head tongue 3_end
+    100034: leg front left ankle
+    100036: leg front left hip
+    100038: leg front left knee
+    100040: leg front left paw
+    100042: leg front left paw_end
+    100044: leg front left thigh
+    100046: leg front right ankle
+    100048: leg front right hip
+    100050: leg front right knee
+    100052: leg front right paw
+    100054: leg front right paw_end
+    100056: leg front right thigh
+    100058: leg rear left ankle
+    100060: leg rear left knee
+    100062: leg rear left paw
+    100064: leg rear left paw_end
+    100066: leg rear left thigh
+    100068: leg rear right ankle
+    100070: leg rear right knee
+    100072: leg rear right paw
+    100074: leg rear right paw_end
+    100076: leg rear right thigh
+    100078: pelvis
+    100080: root ground
+    100082: root hips
+    100084: //RootNode
+    100086: spine lower
+    100088: spine upper
+    100090: tail 1
+    100092: tail 2
+    100094: tail 3
+    100096: tail 3_end
+    100098: Untitled
+    400000: _arm
+    400002: _mesh
+    400004: head ear left
+    400006: head ear left_end
+    400008: head ear right
+    400010: head ear right_end
+    400012: head eyeball left
+    400014: head eyeball left_end
+    400016: head eyeball right
+    400018: head eyeball right_end
+    400020: head jaw
+    400022: head neck lower
+    400024: head neck upper
+    400026: head tongue 1
+    400028: head tongue 2
+    400030: head tongue 3
+    400032: head tongue 3_end
+    400034: leg front left ankle
+    400036: leg front left hip
+    400038: leg front left knee
+    400040: leg front left paw
+    400042: leg front left paw_end
+    400044: leg front left thigh
+    400046: leg front right ankle
+    400048: leg front right hip
+    400050: leg front right knee
+    400052: leg front right paw
+    400054: leg front right paw_end
+    400056: leg front right thigh
+    400058: leg rear left ankle
+    400060: leg rear left knee
+    400062: leg rear left paw
+    400064: leg rear left paw_end
+    400066: leg rear left thigh
+    400068: leg rear right ankle
+    400070: leg rear right knee
+    400072: leg rear right paw
+    400074: leg rear right paw_end
+    400076: leg rear right thigh
+    400078: pelvis
+    400080: root ground
+    400082: root hips
+    400084: //RootNode
+    400086: spine lower
+    400088: spine upper
+    400090: tail 1
+    400092: tail 2
+    400094: tail 3
+    400096: tail 3_end
+    400098: Untitled
+    2100000: 24_0-model-0-mat-0(1)_1_0_0.001
+    2100002: 24_0-model-0-mat-0(2)_1_0_0.001
+    2100004: 24_0-model-0-mat-0(3)_1_0_0.001
+    2100006: 24_0-model-0-mat-0(4)_1_0_0.001
+    2100008: 24_1-model-0-mat-0_1_0_0.001
+    2100010: 24_body_1_0_0.001
+    4300000: _mesh
+    9500000: //RootNode
+    13700000: _mesh
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24_0-model-0-mat-0(1)_1_0_0.001
+    second: {fileID: 2100000, guid: 2835f41a695b003498d20b40fa60c3cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24_body_1_0_0.001
+    second: {fileID: 2100000, guid: edf0ba8a849019145a66e1e62a222cdc, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
