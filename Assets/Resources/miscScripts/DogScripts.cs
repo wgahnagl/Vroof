@@ -43,6 +43,7 @@ public class DogScripts : MonoBehaviour
         int rand = rndom.Next(0, 1000);
         if (rand == 1) { 
             animator.SetTrigger("Yawn");
+            Debug.Log("what");
         }
     }
 
@@ -51,7 +52,6 @@ public class DogScripts : MonoBehaviour
         if (col.gameObject.CompareTag("PlayerHand"))
         {
             animator.SetBool("Wiggle", true);
-            Debug.Log(animator.GetBool("Wiggle"));
             GameObject.Find("VfxBrightStars").GetComponent<ParticleSystem>().Play();
         }
     }
