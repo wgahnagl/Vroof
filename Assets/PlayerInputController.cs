@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
+using OVRTouchSample;
 using System.Collections;
 
-public class PlayerInput : MonoBehaviour
+public class PlayerInputController : MonoBehaviour
 {
     //public Animation animation;
 
@@ -9,15 +10,18 @@ public class PlayerInput : MonoBehaviour
     OVRManager ovrManager;
     void Start()
     {
+        Debug.Log("haniiiii");
         //animation = gameObject.GetComponent<Animation>();
     }
 
+
     // Update is called once per frame
     void Update()
-    {
-        Debug.Log(OVRInput.IsControllerConnected(OVRInput.Controller.RTrackedRemote));
-        OVRInput.Update();
-        // Press A
+    {    // Press A
+
+
+
+        OVRInput.Get(OVRInput.Button.One);
         if (OVRInput.Get(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
             //while () {
