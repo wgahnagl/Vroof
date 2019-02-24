@@ -1372,6 +1372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: sheeb
       objectReference: {fileID: 0}
+    - target: {fileID: 100084, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
+      propertyPath: m_TagString
+      value: shibe
+      objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 4f0f2695d7ab9d84a9414cfb8facb9e3, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
