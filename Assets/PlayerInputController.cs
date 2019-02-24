@@ -4,35 +4,31 @@ using System.Collections;
 
 public class PlayerInputController : MonoBehaviour
 {
-    //public Animation animation;
+    public new Animator animation;
 
     // Use this for initialization
     OVRManager ovrManager;
     void Start()
     {
-        Debug.Log("haniiiii");
-        //animation = gameObject.GetComponent<Animation>();
+        animation = gameObject.GetComponent<Animator>();
     }
 
 
     // Update is called once per frame
     void Update()
     {    // Press A
-
-
-
-        OVRInput.Get(OVRInput.Button.One);
-        if (OVRInput.Get(OVRInput.RawButton.A, OVRInput.Controller.RTouch))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             //while () {
-            //    animation.Play("feeding");
+            animation.Play("Eating_Drinking2");
+          
             //    animation["wagging"].layer = 1;
             //    animation.Play("wagging");
             //    animation["wagging"].weight = 0.4f;
             //}
             Debug.Log("A was pressed");
         }
-        else if (OVRInput.Get(OVRInput.RawButton.X, OVRInput.Controller.LTouch))
+        else if (Input.GetKeyDown(KeyCode.W))
         {
             // Press X
             //while ()
@@ -44,7 +40,7 @@ public class PlayerInputController : MonoBehaviour
             //}
             Debug.Log("X was Pressed");
         }
-        else if (OVRInput.Get(OVRInput.RawButton.LIndexTrigger, OVRInput.Controller.LTouch))
+        else if (Input.GetKeyDown(KeyCode.S))
         {
             //// Left Trigger is Held down
             //while(OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch)){
@@ -55,7 +51,7 @@ public class PlayerInputController : MonoBehaviour
             //}
             Debug.Log("LEFT");
         }
-        else if (OVRInput.Get(OVRInput.RawButton.RIndexTrigger, OVRInput.Controller.RTouch))
+        else if (Input.GetKeyDown(KeyCode.D))
         {
             //    // Right Trigger is held down
             //    while(  ) {
