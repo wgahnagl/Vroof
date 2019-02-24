@@ -13,8 +13,8 @@ public class Particletouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (public virtual bool IsTouched()){
-    ParticleSystem.EmissionModule.rate = 5.0f
-    }
+ //       if (public virtual bool IsTouched()){
+ //   ParticleSystem.EmissionModule.rate = 5.0f
+ //   }
     }
 }
