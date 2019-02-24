@@ -7,9 +7,7 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: EarWagUpController
-  m_Controller: {fileID: 9100000, guid: 62a82ee4ae0b92947b2d96ff0508529b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 48b7bfe63a6880b4eb332bd51f0a79d5, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 2069937b4ad9bcd46afc96f6ea9767af, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 081d60f6602e80d4dac783e526bf0667, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 1930eae2ada702746b843a1cbabd48bd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 115a3fc7d841e9249a570eceeb179ad4, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 115a3fc7d841e9249a570eceeb179ad4, type: 2}

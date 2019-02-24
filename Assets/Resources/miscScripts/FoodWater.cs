@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FoodWater : MonoBehaviour
 {
-    public ParticleSystem particleType;
+    //public ParticleSystem particleType;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,11 +14,11 @@ public class FoodWater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.up.y < 0f)
+        if (this.gameObject.transform.up.y < 0)
         {
-            particleType.Play();
+            Debug.Log("aaaaaaaaaa");
             //you're upside down
         }
-        particleType.Pause();
+        //particleType.Pause();
     }
 }
